@@ -403,7 +403,7 @@ header {
   overflow: hidden;
 }
 .our-story .content {
-  aspect-ratio: 500/2000;
+  aspect-ratio: 500/1826;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -414,16 +414,16 @@ header {
 .our-story .content .couple-hero {
   max-width: 406px;
   width: 100%;
-  aspect-ratio: 406/630;
+  aspect-ratio: 406/436;
   background-color: #efede6;
   margin-top: 14%;
   border-radius: 10px;
 }
 .our-story .content .couple-hero .image {
-  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/08.jpg") no-repeat center/cover;
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/10.jpg") no-repeat 73% 100%/cover;
   max-width: 98%;
   width: 100%;
-  aspect-ratio: 394/517;
+  aspect-ratio: 394/315;
   background-color: #b4b3a8;
   margin: auto;
   border-radius: 10px;
@@ -433,6 +433,8 @@ header {
   font-family: "PinyonScript", sans-serif;
   color: #393934;
   font-size: 38px;
+}
+.our-story .content .couple-hero .title span {
   transform: rotate(-5deg);
 }
 .our-story .content .story {
@@ -550,7 +552,7 @@ header {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/04.jpg") no-repeat bottom/215%;
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/04.jpg") no-repeat bottom/200%;
   filter: blur(13px) brightness(0.8);
   transform: scale(1.1); /* tránh viền trắng khi blur */
   z-index: 1;
@@ -605,12 +607,12 @@ header {
   align-items: start;
 }
 .couple-photo02 .content .logo {
-  max-width: 36px;
+  max-width: 57px;
   margin-top: 10%;
 }
 @media (max-width: 500px) {
   .couple-photo02 .content .logo {
-    max-width: 7.2vw;
+    max-width: 11.4vw;
   }
 }
 
@@ -714,7 +716,7 @@ header {
 .timeline .content .timeline-items .schedule-item.timeline .timeline .line {
   display: inline-block;
   position: absolute;
-  top: 49%;
+  top: 48%;
   left: 11%;
   width: 37%;
   border-bottom: 1px dashed black;
@@ -745,9 +747,9 @@ header {
   background-color: black;
 }
 .timeline .content .timeline-items .schedule-item.timeline .timeline .line.line2 {
-  top: 48%;
-  width: 41%;
-  left: 9%;
+  top: 49%;
+  width: 30%;
+  left: 15%;
 }
 .timeline .content .timeline-items .schedule-item.timeline .timeline .timeline-row {
   display: flex;
@@ -869,7 +871,7 @@ header {
   width: 100%;
 }
 .gallery .content .gallery.gallery-1 {
-  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/10.jpg") no-repeat 100% 97%/100%;
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/08.jpg") no-repeat 100% 68%/100%;
   max-width: 308px;
   background-color: #b4b3a8;
 }
@@ -1340,7 +1342,7 @@ header {
 .letter-section .content {
   width: 100%;
   aspect-ratio: 500/891;
-  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/tram-thinh/letter.png");
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/letter.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

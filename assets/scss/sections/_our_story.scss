@@ -7,7 +7,7 @@
     overflow: hidden;
 
     .content {
-        aspect-ratio: 500 / 2000;
+        aspect-ratio: 500 / 1826;
         // background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/tram-thinh/bg_blur.jpg') no-repeat bottom / 100%;
         width: 100%;
         display: flex;
@@ -21,16 +21,16 @@
         .couple-hero {
             max-width: 406px;
             width: 100%;
-            aspect-ratio: 406 / 630;
+            aspect-ratio: 406 / 436;
             background-color: #efede6ff;
             margin-top: 14%;
             border-radius: 10px;
 
             .image {
-                background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/08.jpg') no-repeat center / cover;
+                background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/10.jpg') no-repeat 73% 100% / cover;
                 max-width: 98%;
                 width: 100%;
-                aspect-ratio: 394 / 517;
+                aspect-ratio: 394 / 315;
                 background-color: $primary-color;
                 margin: auto;
                 border-radius: 10px;
@@ -41,7 +41,9 @@
                 font-family: $font-PinyonScript;
                 color: $text-color-01;
                 font-size: 38px;
-                transform: rotate(-5deg);
+                span {
+                    transform: rotate(-5deg);
+                }
             }
         }
 
@@ -187,7 +189,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/04.jpg') no-repeat bottom / 215%;
+        background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/04.jpg') no-repeat bottom / 200%;
         filter: blur(13px) brightness(0.8);
         transform: scale(1.1); /* tránh viền trắng khi blur */
         z-index: 1;
@@ -270,13 +272,13 @@
         align-items: start;
 
         .logo {
-            max-width: 36px;
+            max-width: 57px;
             margin-top: 10%;
         }
 
         @media (max-width: 500px) {
             .logo {
-                max-width: calc((36 / 500) * 100vw);
+                max-width: calc((57 / 500) * 100vw);
             }
         }
     }

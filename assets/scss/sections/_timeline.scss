@@ -102,7 +102,7 @@
                     .line {
                         display: inline-block;
                         position: absolute;
-                        top: 49%;
+                        top: 48%;
                         left: 11%;
                         width: 37%;
                         border-bottom:1px dashed black;
@@ -133,9 +133,9 @@
                             background-color: black;
                         }
                         &.line2 {
-                            top: 48%;
-                            width: 41%;
-                            left: 9%;
+                            top: 49%;
+                            width:30%;
+                            left: 15%;
                         }
                     }
                     .timeline-row {
@@ -298,7 +298,7 @@
             width: 100%;
 
             &.gallery-1 {
-                background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/10.jpg') no-repeat 100% 97% / 100%;
+                background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/08.jpg') no-repeat 100% 68% / 100%;
                 max-width: 308px;
                 background-color: #b4b3a8ff;
             }
