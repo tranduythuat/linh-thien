@@ -595,7 +595,7 @@
       didOpen: () => Swal.showLoading(),
     });
 
-    const sheetURL = "https://script.google.com/macros/s/AKfycbxBYsxxG8E1gPZP15Gz9kBdp4B-ER2EFt0gcXmJ1k7W8g9s3ai7nXiQOwCOYl1ZtQYB/exec?sheet=confirm";
+    const sheetURL = "?sheet=confirm";
 
     try {
       const res = await fetch(sheetURL, {
