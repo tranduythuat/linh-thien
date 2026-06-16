@@ -1,0 +1,283 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.our-story {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    .content {
+        aspect-ratio: 500 / 2000;
+        // background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/tram-thinh/bg_blur.jpg') no-repeat bottom / 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        // font-family: $font-1FTV-VIP-Qerginas;
+        // background-color: #efede6ff;
+        z-index: 1;
+
+        .couple-hero {
+            max-width: 406px;
+            width: 100%;
+            aspect-ratio: 406 / 630;
+            background-color: #efede6ff;
+            margin-top: 14%;
+            border-radius: 10px;
+
+            .image {
+                background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/08.jpg') no-repeat center / cover;
+                max-width: 98%;
+                width: 100%;
+                aspect-ratio: 394 / 517;
+                background-color: $primary-color;
+                margin: auto;
+                border-radius: 10px;
+            }
+
+            .title {
+                margin-top: 10%;
+                font-family: $font-PinyonScript;
+                color: $text-color-01;
+                font-size: 38px;
+                transform: rotate(-5deg);
+            }
+        }
+
+        .story {
+            width: 100%;
+            color: $text-color;
+
+            .logo {
+                margin-top: 13%;
+                margin-bottom: 4%;
+
+                img {
+                    max-width: 36px;
+                }
+            }
+
+            .subtitle {
+                font-family: $font-gothamBold;
+                font-size: 13px;
+                margin-bottom: 4%;
+                text-transform: uppercase;
+                line-height: 1.6;
+            }
+
+            .subtext {
+                font-family: $font-gotham;
+                font-size: 13px;
+                margin-bottom: 12%;
+            }
+        }
+
+        .memory {
+            position: relative;
+
+            .photo {
+                position: absolute;
+                width: 100%;
+                // background-color: #b7b09bff;
+                border: 6px solid #efede6ff;
+            }
+
+            .memory-content {
+                position: absolute;
+
+                .label {
+                    display: inline-block;
+                    text-transform: uppercase;
+                    font-family: $font-gotham;
+                    font-size: 13px;
+                    background-color: #efede6ff;
+                    color: $text-color-01;
+                    line-height: 1;
+                    padding: 1% 3%;
+                    margin-bottom: 2%;
+                }
+
+                p {
+                    font-family: $font-gotham;
+                    font-size: 13px;
+                    // letter-spacing: 1.1px;
+                }
+            }
+
+            &.memory-left {
+                aspect-ratio: 500 / 343;
+                text-align: left;
+                margin-bottom: 15%;
+
+                .photo {
+                    max-width: 177px;
+                    aspect-ratio: 164 / 218;
+
+                    &.photo1 {
+                        background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/02.jpg') no-repeat center / cover;
+                        top: 0;
+                        left: 28%;
+                    }
+
+                    &.photo2 {
+                        background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/04.jpg') no-repeat center / cover;
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+
+                .memory-content {
+                    bottom: 0%;
+                    left: 39%;
+                    padding-right: 8%;
+                    text-align: justify;
+                }
+            }
+
+            &.memory-right {
+                aspect-ratio: 500 / 168;
+                text-align: right;
+
+                .photo {
+                    max-width: 215px;
+                    aspect-ratio: 215 / 168;
+                    right: 0;
+                    background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/03.jpg') no-repeat 55% 44% / 150%;
+                }
+
+                .memory-content {
+                    bottom: 13%;
+                    left: 8%;
+                    padding-right: 47%;
+
+                    p {
+                        text-align: justify !important;
+                        text-align-last: right;
+                    }
+                }
+
+                &.first {
+                    aspect-ratio: 500 / 260;
+                    margin-bottom: 15%;
+                    
+                    .photo {
+                        aspect-ratio: 215 / 315;
+                        max-width: 177px;
+                        background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/01.jpg') no-repeat center / 100%;
+                    }
+
+                    .memory-content {
+                        bottom: 20%;
+                        left: 8%;
+                        padding-right: 40%;
+    
+                        p {
+                            text-align: justify !important;
+                            text-align-last: right;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/04.jpg') no-repeat bottom / 215%;
+        filter: blur(13px) brightness(0.8);
+        transform: scale(1.1); /* tránh viền trắng khi blur */
+        z-index: 1;
+    }
+
+    @media (max-width: 500px) {
+        .content {
+            .couple-hero {
+                max-width: calc((406 / 500) * 100vw);
+                border-radius: calc((10 / 500) * 100vw);
+
+                .image {
+                    border-radius: calc((10 / 500) * 100vw);
+                }
+
+                .title {
+                    font-size: calc((38 / 500) * 100vw);
+                }
+            }
+
+            .story {
+                .logo {
+                    img {
+                        max-width: calc((36 / 500) * 100vw);
+                    }
+                }
+    
+                .subtitle, .subtext {
+                    font-size: calc((13 / 500) * 100vw);
+                }
+            }
+
+            .memory {
+                .photo {
+                    border: calc((6 / 500) * 100vw) solid #efede6ff;
+                }
+
+                .memory-content {
+                    .label {
+                        font-size: calc((13 / 500) * 100vw);
+                    }
+
+                    p {
+                        font-size: calc((13 / 500) * 100vw);
+                    }
+                }
+
+                &.memory-left {
+                    .photo {
+                        max-width: calc((177 / 500) * 100vw);
+                    }
+                }
+
+                &.memory-right {
+                    .photo {
+                        max-width: calc((215 / 500) * 100vw);
+                    }
+
+                    &.first {
+                        .photo {
+                            max-width: calc((177 / 500) * 100vw);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.couple-photo02 {
+    width: 100%;
+
+    .content {
+        width: 100%;
+        aspect-ratio: 500 / 745;
+        background-color: #b7b09bff;
+        background: url('https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/linh-thien/06.jpg') no-repeat 100% 40% / 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+
+        .logo {
+            max-width: 36px;
+            margin-top: 10%;
+        }
+
+        @media (max-width: 500px) {
+            .logo {
+                max-width: calc((36 / 500) * 100vw);
+            }
+        }
+    }
+}
