@@ -308,6 +308,34 @@
     // tl.from(date, { y: 100, opacity: 0 }, "-=0.4");
   }
 
+  async function loadGuest() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const inviteCode = urlParams.get("invite");
+    if (!inviteCode) return;
+
+    const response = await fetch(
+      'https://opensheet.elk.sh/1UkNG4iUjeOcR5GlF-JH3w7eES19H8k3kY6th048sQZU/list%20t%C3%AAn%20kh%C3%A1ch%20m%E1%BB%9Di'
+    );
+
+    const data = await response.json();
+    console.log('--- DATA ---', data);
+    // Tìm khách mời
+    const guest = data.find(
+      row =>
+        row.slug &&
+        row.slug.trim() === inviteCode
+    );
+  
+    // Đổ tên vào giao diện
+    if (guest) {
+      document.querySelector('.guest-name').textContent =
+        guest.name;
+    } else {
+      document.querySelector('.guest-name').textContent =
+        'Quý Khách';
+    }
+  }
+
   /* ======================================================
        TIMELINE ANIMATION
     ====================================================== */
@@ -727,6 +755,7 @@
     gsap.registerPlugin(ScrollTrigger);
     initPage();
     initLetterAnimation();
+    loadGuest();
     initAnimations();
     // initSwiper();
     initMusic();

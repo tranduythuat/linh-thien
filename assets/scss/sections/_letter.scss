@@ -13,7 +13,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
-        justify-content: end;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
         color: #564e47ff;
@@ -22,6 +22,24 @@
         cursor: pointer;
         perspective: 1000px;
         padding-bottom: 15%;
+        padding-top: 65%;
+
+        .invite-text {
+            font-size: 12px;
+            font-family: $font-gotham;
+            text-transform: uppercase;
+            margin-bottom: 5%;
+            text-align: center;
+
+        }
+
+        .guest-name {
+            font-family: $font-PinyonScript;
+            font-size: 32px;
+            margin-bottom: 5%;
+            margin-top: 5%;
+            text-align: center;
+        }
         
         .subtext {
             font-family: $font-HLTJaneAusten;
@@ -34,6 +52,13 @@
         .content {
             .subtext  {
                 font-size: calc((21 / 500) * 100vw);
+            }
+
+            .invite-text {
+                font-size: calc((12 / 500) * 100vw);
+            }
+            .guest-name {
+                font-size: calc((32 / 500) * 100vw);
             }
         }
     }
